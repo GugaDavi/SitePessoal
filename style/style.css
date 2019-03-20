@@ -1,0 +1,45 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #092B8A;
+}
+/* IDs */
+
+#container {
+    border: 1px solid red;
+    width: 1070px;
+    margin: 10px auto;
+    height: 700px;
+    padding: 10px;
+    text-align: left;
+}
+#links {
+    border: solid 1px red;
+    margin-left: 20px;
+    padding: 20px;
+    width: 300px;
+    float: right;
+    display: block;
+}
+#top {
+    background: url("../imagns bank/mac.jpg");
+    height: 700px;
+
+}
+#titulo {
+    float: right;
+}
+
+/* Links */
+
+a{
+    text-decoration: none;
+    background: yellow;
+    border: solid 1px red;
+    padding: 9px;
+}
+

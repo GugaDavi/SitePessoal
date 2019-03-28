@@ -1,45 +1,241 @@
-*{
-	margin: 0px;
-	padding: 0px;
+/* Start stype index.html */
+* {
+    margin: 0px;
+    padding: 0px;
 }
-body{
-	font-size: 1em;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background-color: #092B8A;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
-/* IDs */
+#barraTopo {
+    width: 100%;
+    height: 78px;
+    background-color: #0181a4;
+    border-bottom: 2px solid red;
+    background: linear-gradient(180deg, #0181a4, white)
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+#logoTopo {
+    float: left;
+    width: 50%;
+    height: 78px;
+    text-align: left;
+    line-height: 78px;
+    font-size: 30px;
+}
+#logoTopo a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+#logoTopo a:hover {
+    color: #888888;
+    font-size: 32px;
+    text-shadow: 0px -3px 1px #232222;
+}
+#linksTopo {
+    float: right;
+    width: 50%;
+    height: 78px;
+}
+#linksTopo ul {
+    list-style-type: none;
+    float: right;
+    line-height: 78px;
+}
+#linksTopo li {
+    float: left;
+}
+#linksTopo li a {
+    color: white;
+    text-decoration: none;
+    line-height: 78px;
+    transition: all 0.5s;
+    line-height: 78px;
+    margin-left: 15px;
+}
+#linksTopo li a:hover {
+    color: #888888;
+    font-size: 17px;
+    line-height: 78px;
+}
+#frontBanner {
+    width: 100%
+}
+#fraseBanner {
+    font-size: 9em;
+    position: absolute;
+    color: white;
+    top: 300px;
+    text-shadow: 0px 5px 1px #232222;
+    width: 100%;
+    max-width: 1000px;
+}
+#preViewAbout {
+    float: left;
+    width: 48%;
+    height: 300px;
+    background-color: #2f8493;
+    border-top-left-radius: 40px;
+    margin: 10px;
+    box-shadow: -5px 5px 5px white;
+    background: linear-gradient(45deg, white, #2f8493)
+}
+.textBox {
+    float: left;
+    text-align: center;
+    padding: 50px;
+}
+#preViewProjects {
+    float: right;
+    width: 48%;
+    height: 300px;
+    background-color: #2f8493;
+    border-top-right-radius: 40px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px white;
+    background: linear-gradient(-45deg, white, #2f8493)
+}
+#buttonLeft {
+    float: left;
+    clear: both;
+    height: 100px;
+    width: 48%;
+    background-color: blue;
+    margin: 10px;
+    box-shadow: -5px 5px 5px white;
+    border-bottom-left-radius: 40px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    transition: all 0.5s linear;
+}
+#buttonLeft a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s linear;
 
-#container {
-    border: 1px solid red;
-    width: 1070px;
-    margin: 10px auto;
-    height: 700px;
-    padding: 10px;
+}
+#buttonLeft:hover {
+    font-size: 43px;
+    background-color: rgb(224, 224, 0);
+}
+#buttonRight {
+    float: right;
+    height: 100px;
+    width: 48%;
+    background-color: blue;
+    margin: 10px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 5px 5px 5px white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    transition: all 0.5s linear;
+}
+#buttonRight a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s linear;
+
+}
+#buttonRight:hover {
+    font-size: 43px;
+    background-color: #ff6060;
+}
+#footer {
+    clear: both;
+    width: 100%;
+    height: 78px;
+    background-color: #0181a4;
+    border-top: 2px solid red;
+    margin-top: 550px; 
+    background: linear-gradient(white, #0181a4)
+}
+#byMe {
+    line-height: 78px;
+    color: #c80000;
+    float: left;
+}
+#phone {
+    line-height: 78px;
+    color: #c80000;
+    float: right;
+}
+
+/* End style index.html */
+
+/* Start style about.html */
+
+#fraseBannerA {
+    font-size: 9em;
+    position: absolute;
+    color: white;
+    top: 500px;
+    text-shadow: 0px 5px 1px #232222;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* End style about.html */
+
+/* Start style projects.html */
+/* End style projects.html */
+
+/* Start style contact.html */
+
+#footerC {
+    clear: both;
+    width: 100%;
+    height: 78px;
+    background-color: #0181a4;
+    border-top: 2px solid red;
+    margin-top: 50px; 
+    background: linear-gradient(white, #0181a4)
+}
+
+#barraTopoC {
+    width: 100%;
+    height: 78px;
+    background-color: #0181a4;
+    border-bottom: 2px solid red;
+    background: linear-gradient(180deg, #0181a4, white);
+    margin-bottom: 50px;
+}
+
+#formC { 
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    color: white;
     text-align: left;
 }
-#links {
-    border: solid 1px red;
-    margin-left: 20px;
-    padding: 20px;
-    width: 300px;
-    float: right;
-    display: block;
+#formC input {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 15px;
+    height: 30px;
+    padding-left: 10px;
 }
-#top {
-    background: url("../imagns bank/mac.jpg");
-    height: 700px;
-
+#formC textarea {
+    border: 0px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
 }
-#titulo {
-    float: right;
-}
-
-/* Links */
-
-a{
-    text-decoration: none;
-    background: yellow;
-    border: solid 1px red;
-    padding: 9px;
+#formC button {
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
 }
 
+/* End style contact.html */

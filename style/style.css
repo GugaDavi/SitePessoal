@@ -67,13 +67,23 @@ body {
     width: 100%
 }
 #fraseBanner {
-    font-size: 9em;
+    font-size: 8em;
     position: absolute;
     color: white;
     top: 300px;
     text-shadow: 0px 5px 1px #232222;
     width: 100%;
     max-width: 1000px;
+}
+@media only screen and (max-width: 1124px) {
+    #fraseBanner {
+        font-size: 7em;
+    }
+}
+@media only screen and (max-width: 701px) {
+    #fraseBanner {
+        font-size: 4em;
+    }
 }
 #preViewAbout {
     float: left;
@@ -84,6 +94,16 @@ body {
     margin: 10px;
     box-shadow: -5px 5px 5px white;
     background: linear-gradient(45deg, white, #2f8493)
+}
+@media only screen and (max-width: 701px) {
+    #preViewAbout {
+        width: 45%;
+        height: auto;
+    }
+    #preViewProjects {
+        width: 45%;
+        height: auto;
+    }
 }
 .textBox {
     float: left;
@@ -100,6 +120,12 @@ body {
     box-shadow: 5px 5px 5px white;
     background: linear-gradient(-45deg, white, #2f8493)
 }
+@media only screen and (max-width: 701px) {
+    #preViewProjects {
+        width: 45%;
+        height: 420px;
+    }
+}
 #buttonLeft {
     float: left;
     clear: both;
@@ -113,6 +139,11 @@ body {
     line-height: 100px;
     font-size: 40px;
     transition: all 0.5s linear;
+}
+@media only screen and (max-width: 701px) {
+    #buttonLeft {
+        width: 45%;
+    }
 }
 #buttonLeft a {
     color: white;
@@ -136,6 +167,11 @@ body {
     line-height: 100px;
     font-size: 40px;
     transition: all 0.5s linear;
+}
+@media only screen and (max-width: 701px) {
+    #buttonRight {
+        width: 45%;
+    }
 }
 #buttonRight a {
     color: white;
@@ -179,6 +215,11 @@ body {
     text-shadow: 0px 5px 1px #232222;
     width: 100%;
     max-width: 1000px;
+}
+@media only screen and (max-width: 1200px) {
+    #fraseBannerA {
+        font-size: 7em;
+    }
 }
 #textA {
     color: white;
@@ -246,6 +287,90 @@ body {
 /* End style about.html */
 
 /* Start style projects.html */
+
+#fraseBannerP {
+    font-size: 15em;
+    position: absolute;
+    color: white;
+    top: 500px;
+    text-shadow: 0px 5px 1px #232222;
+    width: 100%;
+    max-width: 1000px;
+}
+@media only screen and (max-width: 1200px) {
+    #fraseBannerP {
+        font-size: 7em;
+    }
+}
+#footerP {
+    clear: both;
+    width: 100%;
+    height: 78px;
+    background-color: #0181a4;
+    border-top: 2px solid red;
+    margin-top: 100px; 
+    background: linear-gradient(white, #0181a4)
+}
+#project1 {
+    width: 100%;
+    height: 700px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+#textProject1 {
+    width: 40%;
+    color: white;
+    float: left;
+    padding-top: 20%; 
+    padding: 50px;
+}
+#textProject1 ul {
+    list-style: none;
+}
+#viewProject1 {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+#project2 {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 1px solid red;
+}
+#textProject2 {
+    width: 50%;
+    color: white;
+    float: left;
+    text-align: center;
+    padding-top: 20%; 
+}
+#viewProject2 {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+#project3 {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 1px solid red;
+}
+#textProject3 {
+    width: 30%;
+    color: white;
+    float: left;
+    text-align: center;
+    padding-top: 20%; 
+}
+#viewProject3 {
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
 /* End style projects.html */
 
 /* Start style contact.html */

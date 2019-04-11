@@ -38,7 +38,7 @@
                 <br/>
                 
                 <br>
-                <button type="submit">Enviar</button>
+                <button type="submit" id="enviar">Enviar</button>
             </div>
         </form>
     </div>
@@ -54,5 +54,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+    
+        $form = document.querySelector("#enviar");
+
+        $form.addEventListener( "click", function () {
+            alert("Obrigado pela visita!!");
+        } );
+    </script>
 </body>
 </html>

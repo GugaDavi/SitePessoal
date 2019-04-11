@@ -327,6 +327,9 @@ body {
 #textProject1 ul {
     list-style: none;
 }
+#textProject1 a {
+    text-decoration: none;
+}
 #viewProject1 {
     width: 50%;
     height: 100%;
@@ -337,14 +340,16 @@ body {
     height: 500px;
     margin-bottom: 30px;
     margin-top: 30px;
-    border: 1px solid red;
 }
 #textProject2 {
-    width: 50%;
+    width: 40%;
     color: white;
     float: left;
-    text-align: center;
     padding-top: 20%; 
+    padding: 50px; 
+}
+#textProject2 a {
+    text-decoration: none;
 }
 #viewProject2 {
     width: 50%;
@@ -353,17 +358,18 @@ body {
 }
 #project3 {
     width: 100%;
-    height: 500px;
+    height: 650px;
     margin-bottom: 30px;
     margin-top: 30px;
-    border: 1px solid red;
 }
 #textProject3 {
-    width: 30%;
+    width: 20%;
     color: white;
     float: left;
-    text-align: center;
-    padding-top: 20%; 
+    padding: 0 40px 40px 40px; 
+}
+#textProject3 a {
+    text-decoration: none;
 }
 #viewProject3 {
     width: 70%;

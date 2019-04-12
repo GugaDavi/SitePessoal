@@ -93,22 +93,31 @@
       </div>
     </div>
     <script>
+
+      var monitor = document.getElementById('resultado');
+      var cont = 0;
+      var sinal = '';
     
       function calular(tipo, valor) {
         if (tipo === 'acao') {
           if (valor === 'c') {
-            document.getElementById('resultado').value = ''
+            monitor.value = ''
           }
-          if (valor === '+' || valor === '-' || valor === '*' || valor === '/') {
-            document.getElementById('resultado').value += valor
+          if (valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.') {
+            if ( sinal === '' ) {
+              sinal = valor;
+            }
+            if ( !(monitor.value.match(/[\+\-\/\*]$/)) ) {
+                monitor.value += valor;
+                sinal = valor;
+            }
           }
           if (valor === '=') {
-            var resultado_campo = document.getElementById('resultado').value
-            console.log()
-            document.getElementById('resultado').value = eval(resultado_campo)
+            var resultado_campo = monitor.value
+            monitor.value = eval(resultado_campo)
           }
         } else if (tipo === 'valor'){
-          document.getElementById('resultado').value += valor
+          monitor.value += valor
         }
       } 
 

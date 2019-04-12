@@ -22,23 +22,25 @@ function styles() {
 
 function addBug() {
     var bug = document.createElement("img");
-    bug.setAttribute("src", "images/mosquito.png")
-    bug.setAttribute("class", tamanhos[styles()])
+    bug.setAttribute("src", "images/mosquito.png");
+    bug.setAttribute("class", tamanhos[styles()]);
+    bug.setAttribute("onclick", "killBug(this)");
     bug.setAttribute("style", "left:" + localizacaoX() + "px;top:" + localizacaoY() + "px;");
     document.body.appendChild(bug);
     count -= 1;
     console.log(bug);
     if ( count <= 0 ){
-        var btn = document.createElement("button");
-        btn.setAttribute("class", "btn btn-success btn-lg btn-block");
+        var btn = document.createElement("a");
+        btn.setAttribute("class", "btn btn-primary btn-lg btn-block reiniciard");
+        btn.setAttribute("href", "index.html" );
         btn.innerHTML = "Reiniciar";
         document.body.appendChild(btn);
-        btn.setAttribute("onclick", reset() );
-        function reset() {
-            window.location.href = "index.html";
-        };
         clearInterval( timer );
     }
+}
+
+function killBug(element) {
+    document.body.removeChild(element);
 }
 
 var count = 10;

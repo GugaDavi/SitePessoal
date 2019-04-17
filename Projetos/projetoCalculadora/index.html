@@ -107,9 +107,12 @@
             if ( sinal === '' ) {
               sinal = valor;
             }
+            if ( (monitor.value.match(/[\+\-\/\*]$/)) && (sinal !== valor) ) {
+                monitor.value = monitor.value.slice(0, -1);
+              }
             if ( !(monitor.value.match(/[\+\-\/\*]$/)) ) {
-                monitor.value += valor;
-                sinal = valor;
+              monitor.value += valor;
+              sinal = valor;
             }
           }
           if (valor === '=') {
